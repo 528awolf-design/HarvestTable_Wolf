@@ -8,6 +8,11 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.duperfont {
+  font-family: "Balthazar", serif;
+  font-weight: 400;
+  font-style: bold;
+}
 .textColorOne {
     color:#812c2c;
     text-shadow: 3px 2px 6px #f9c11f;
@@ -15,7 +20,10 @@ body {
 .textColorTwo {
     color:#3e463b;
     text-shadow: 3px 2px 6px #f9c11f;
-
+}
+.textColorThree {
+    color: #f9c11f;
+    text-shadow: 3px 2px 6px #812c2c;
 }
 .biggie {
     font-size:5.5rem;
@@ -25,10 +33,16 @@ width:35rem !important;
 height:35rem !important;
 }
 .roundBorders {
-    border-radius:15px;
+    border-radius:25px;
 }
 .divDirections {
     background-color:rgba(232,223,196,0.51);
+}
+.blueDirections {
+    background-color:rgba(78,90,143,0.51);
+}
+.greenDirections {
+    background-color: rgba(62,70,59,0.51);
 }
 .mediumSized {
     font-size:2.5rem;
