@@ -1,7 +1,8 @@
 body {
     background-image: url('NovWebBG.png');
-    background-size: cover;
-    background-position: sticky;
+    background-size:cover;
+    background-position:top;
+    background-attachment:fixed;
 }
 .superfont {
   font-family: "Sancreek", serif;
@@ -14,39 +15,79 @@ body {
   font-style: bold;
 }
 .textColorOne {
-    color:#812c2c;
-    text-shadow: 3px 2px 6px #f9c11f;
+    color:var(--textColorOne);
+    text-shadow: 3px 2px 6px var(--textColorThree);
 }
 .textColorTwo {
-    color:#3e463b;
-    text-shadow: 3px 2px 6px #f9c11f;
+    color:var(--textColorTwo);
+    text-shadow: 3px 2px 6px var(--textColorThree);
 }
 .textColorThree {
-    color: #f9c11f;
-    text-shadow: 3px 2px 6px #812c2c;
+    color: var(--textColorThree);
+    text-shadow: 3px 2px 6px var(--textColorOne);
 }
 .biggie {
     font-size:5.5rem;
 }
+.littleBiggie {
+    font-size:4.5rem;
+}
 #imgSizeOne {
-width:35rem !important;
-height:35rem !important;
+width:35rem;
+height:35rem;
+}
+.imgSizeMob {
+    width:25rem !important;
+    height:25rem !important;
 }
 .roundBorders {
     border-radius:25px;
 }
 .divDirections {
-    background-color:rgba(232,223,196,0.51);
+    background-color:var(--divColor);
+    width:100%;
+    height:100%;
 }
 .blueDirections {
-    background-color:rgba(78,90,143,0.51);
+    background-color:var(--blueColor);
+}
+.blueDirections:hover {
+    background-color:var(--blueColor);
+    scale:1.1;
+    transition:all 0.25s ease-in-out;
 }
 .greenDirections {
-    background-color: rgba(62,70,59,0.51);
+    background-color: var(--greenColor);
+}
+.greenDirections:hover {
+    background-color: var(--greenColor);
+    scale:1.1;
+    transition:all 0.25s ease-in-out;
+}
+.footDirections {
+    background-color: var(--footerColor);
+    margin-top:auto;
 }
 .mediumSized {
     font-size:2.5rem;
 }
 .reasonablySized {
     font-size:2rem;
+}
+.linkDecor {
+    color:var(--blueColor);
+}
+.theHover:hover {
+    text-decoration:underline;
+    scale:1.1;
+    transition:all 0.25s ease-in-out;
+}
+:root {
+    --textColorOne: #812c1c;
+    --textColorTwo: #3e463b;
+    --textColorThree: #f9c11f;
+    --divColor: rgba(232,223,196,0.51);
+    --blueColor: rgba(78,90,143,0.51);
+    --greenColor: rgba(62,70,59,0.51);
+    --footerColor: rgba(129,44,44,0.69);
 }
